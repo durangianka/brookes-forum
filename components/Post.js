@@ -1,17 +1,17 @@
 
 function Post({ username, content, date, comments, likes, forum, image }) {
 
-    const post = {
-        user: {
-            username: 'theRollerBlooder12_22',
-            img: 'https://media.istockphoto.com/photos/colored-powder-explosion-on-black-background-picture-id1057506940?k=20&m=1057506940&s=612x612&w=0&h=3j5EA6YFVg3q-laNqTGtLxfCKVR3_o6gcVZZseNaWGk='
-        },
-        forum: 'COMP5004: C++',
-        content: 'C++ how does headers work when using OOP',
-        date: '24-4-2019',
-        likes: 20,
-        id: 1,
-    }
+    // const post = {
+    //     user: {
+    //         username: 'theRollerBlooder12_22',
+    //         img: 'https://media.istockphoto.com/photos/colored-powder-explosion-on-black-background-picture-id1057506940?k=20&m=1057506940&s=612x612&w=0&h=3j5EA6YFVg3q-laNqTGtLxfCKVR3_o6gcVZZseNaWGk='
+    //     },
+    //     forum: 'COMP5004: C++',
+    //     content: 'C++ how does headers work when using OOP',
+    //     date: '24-4-2019',
+    //     likes: 20,
+    //     id: 1,
+    // }
     return (
         <div className="flex bg-white shadow-lg rounded-lg mx-auto my-10 max-w-md md:max-w-2xl">
             <div className="w-full flex items-start px-4 py-6">

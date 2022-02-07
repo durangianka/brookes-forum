@@ -30,9 +30,9 @@ function Header() {
                     </div>
                 </div>
                 <div className='w-full lg:w-2/4 flex flex-row items-center justify-between '>
-                    <form className="m-4 flex" onSubmit={submitHandler}>
-                        <input className="w-44 h-10 rounded-l-lg p-4 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white" placeholder="search..." />
-                        <button className="h-10 w-14 rounded-r-lg bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold  uppercase border-yellow-500 border-t border-b border-r"><CgSearch size={20} className='mx-auto' /></button>
+                    <form className="m-4 flex group" onSubmit={submitHandler}>
+                        <input className="w-44 h-10 rounded-l-lg p-4 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white focus:outline-none" placeholder="search..." />
+                        <button className="h-10 w-14 rounded-r-lg bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold  uppercase border-yellow-500 border-t border-b border-r"><CgSearch size={20} className='mx-auto group-hover:scale-110 transition ease-in-out' /></button>
                     </form>
                     <div className="flex flex-row items-center space-x-8 pr-8">
                         {!session ?

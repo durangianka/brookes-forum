@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { CgSearch } from "react-icons/cg";
 import { FiUser } from "react-icons/fi"
 import { HiPlusSm } from 'react-icons/hi'
-
+import Link from 'next/link'
 import { useSession, signIn, signOut } from "next-auth/react"
 
 
@@ -40,7 +40,9 @@ function Header() {
                             :
                             <>
                                 <HiPlusSm className='hover:scale-110 transition ease-in-out cursor-pointer border-[0.5px] border-[#64748B] rounded-lg p-[0.5px]' size={30} color="#04012e" />
-                                <img className=" w-8 h-8 rounded-full cursor-pointer" src={session.user.image} alt="profile pic" onClick={signOut} />
+                                <Link href="/profile">
+                                    <img className=" w-8 h-8 rounded-full cursor-pointer" src={session.user.image} alt="profile pic" />
+                                </Link>
 
                                 {/* <FiUser className='hover:scale-125 transition ease-in-out cursor-pointer p-2' size={40} color="#04012e" /> */}
 

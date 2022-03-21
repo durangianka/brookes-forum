@@ -39,7 +39,9 @@ function Header() {
                             <button className="w-32 p-2 bg-[#0a8019] hover:bg-green-400 rounded-md mx-4 cursor-pointer text-md text-white" onClick={signIn}>Sign In</button>
                             :
                             <>
-                                <HiPlusSm className='hover:scale-110 transition ease-in-out cursor-pointer border-[0.5px] border-[#64748B] rounded-lg p-[0.5px]' size={30} color="#04012e" />
+                                <Link href="/upload">
+                                    <HiPlusSm className='hover:scale-110 transition ease-in-out cursor-pointer border-[0.5px] border-[#64748B] rounded-lg p-[0.5px]' size={30} color="#04012e" />
+                                </Link>
                                 <Link href="/profile">
                                     <img className=" w-8 h-8 rounded-full cursor-pointer" src={session.user.image} alt="profile pic" />
                                 </Link>

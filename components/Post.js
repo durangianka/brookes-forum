@@ -1,5 +1,6 @@
+import Router from "next/router";
 
-function Post({ username, content, date, comments, likes, forum, image }) {
+function Post({ username, content, date, comments, likes, forum, image, id }) {
 
     // const post = {
     //     user: {
@@ -36,7 +37,7 @@ function Post({ username, content, date, comments, likes, forum, image }) {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
                             </svg>
                             <span> {comments ? comments : 0}</span>
-                            <u className="ml-4 cursor-pointer"><span>{forum}</span></u>
+                            <u onClick={() => Router.push(`/post/${id}`)} className="ml-4 cursor-pointer"><span>{forum}</span></u>
                         </div>
                     </div>
                 </div>

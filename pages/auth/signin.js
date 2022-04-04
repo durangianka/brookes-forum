@@ -37,7 +37,6 @@ function signIn({ providers }) {
                     </div>
                 </div>
             </div>
-
         </>
     )
 }
